@@ -1,0 +1,22 @@
+services:
+  redis:
+    image: "redis:latest"
+    ports:
+      - "6379:6379"
+  muse-db:
+    image: "muse-db"
+    profiles:
+      - with_db
+    entrypoint: ["poetry", "run", "invoke", "worker"]
+  backend:
+    build: https://github.com/UST-QuAntiL/qhana-backend.git#origin/feature/tmp
+    image: qhana-backend
+    ports:
+      - 9090:9090
+  ui:
+    build: https://github.com/UST-QuAntiL/qhana-ui.git#feature/microfrontend-refactor
+    image: qhana-ui
+    ports:
+      - 4200:4200
+volumes:
+  instance:

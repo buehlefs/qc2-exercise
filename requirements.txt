@@ -1,0 +1,7 @@
+qhana-plugin-runner @ git+https://github.com/UST-QuAntiL/qhana-plugin-runner.git@feature/microfrontend-refactor ; python_version >= "3.7" and python_version < "4.0"
+numpy==1.21.1; python_version >= "3.7"
+qiskit-aer==0.10.2; python_version >= "3.6"
+qiskit-ibmq-provider==0.18.3; python_version >= "3.6"
+qiskit-ignis==0.7.0; python_version >= "3.6"
+qiskit-terra==0.19.1; python_version >= "3.6"
+qiskit==0.34.1; python_version >= "3.6"
