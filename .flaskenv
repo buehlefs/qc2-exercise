@@ -4,4 +4,4 @@ FLASK_APP=qhana_plugin_runner
 FLASK_ENV=development # set to production if in production!
 
 # configure default port
-FLASK_RUN_PORT=5000
+FLASK_RUN_PORT=5005
