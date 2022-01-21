@@ -1,4 +1,4 @@
-# QC2 Excercise QHAna
+# QC2 Exercise QHAna
 
 
 ## Requirements
@@ -71,6 +71,8 @@ At the bottom of the file is a method that should provide the actual algorithm i
 
 All computations are logged in the timeline. Output data can be viewd in the data tab.
 
+To explore all implemented QHAna plugins start the docker-compose file with `docker-compose --profile plugins up`.
+
 
 ## Documentation
 
@@ -83,3 +85,4 @@ For documentation on how to write aplugin directly go to <https://qhana-plugin-r
  * <https://github.com/UST-QuAntiL/qhana-ui>
  * <https://github.com/UST-QuAntiL/qhana-backend>
  * <https://github.com/UST-QuAntiL/qhana-plugin-runner>
+
