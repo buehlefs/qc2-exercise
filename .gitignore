@@ -1,7 +1,9 @@
 # Custom ignores:
 
 .idea/
-.vscode/
+.vscode/**/*
+!.vscode/launch.json
+!.vscode/settings.json
 
 
 
