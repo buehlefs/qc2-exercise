@@ -32,7 +32,7 @@ Start the QHAna components by runnign `docker-compose up` (or `docker compose up
 This may take a while. To start the components in the background add the `-d` flag to the command.
 To stop all components run `docker-compose down`. (hint: all docker compose commands must be executed in the same folder this file is in.)
 
-Open <http://localhost:4200/#/settings> and add `http://localhost:5000` to the Plugin Endpoints.
+Open <http://localhost:4200/#/settings> and add `http://localhost:5005` to the Plugin Endpoints.
 
 ![QHAna settings page with plugin runner address added.](images/qhana-settings.png)
 
@@ -71,7 +71,7 @@ At the bottom of the file is a method that should provide the actual algorithm i
 
 All computations are logged in the timeline. Output data can be viewd in the data tab.
 
-To explore all implemented QHAna plugins start the docker-compose file with `docker-compose --profile plugins up`.
+To explore all implemented QHAna plugins start the docker-compose file with `docker-compose --profile plugins up` and add `http://localhost:5000` to the Plugin Endpoints in the settings page of the QHAna UI.
 
 
 ## Documentation

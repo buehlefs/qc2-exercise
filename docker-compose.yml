@@ -1,11 +1,11 @@
 services:
   backend:
-    build: https://github.com/UST-QuAntiL/qhana-backend.git#origin/feature/tmp
+    build: https://github.com/UST-QuAntiL/qhana-backend.git#extra/qc2-exercise
     image: qhana-backend
     ports:
       - 9090:9090
   ui:
-    build: https://github.com/UST-QuAntiL/qhana-ui.git#feature/microfrontend-refactor
+    build: https://github.com/UST-QuAntiL/qhana-ui.git#extra/qc2-exercise
     image: qhana-ui
     ports:
       - 4200:4200
@@ -20,7 +20,7 @@ services:
       - full
   qhana-plugin-runner:
     platform: linux/amd64
-    build: https://github.com/UST-QuAntiL/qhana-plugin-runner.git#feature/microfrontend-refactor
+    build: https://github.com/UST-QuAntiL/qhana-plugin-runner.git#extra/qc2-exercise
     image: qhana-plugin-runner
     depends_on:
       - redis-internal
@@ -38,7 +38,7 @@ services:
       SQLALCHEMY_DATABASE_URI: "postgresql+psycopg2://user:password@postgres:5432/default_db"
     entrypoint: ["/app/start.sh"]
   worker:
-    build: https://github.com/UST-QuAntiL/qhana-plugin-runner.git#feature/microfrontend-refactor
+    build: https://github.com/UST-QuAntiL/qhana-plugin-runner.git#extra/qc2-exercise
     image: qhana-plugin-runner
     depends_on:
       - qhana-plugin-runner
