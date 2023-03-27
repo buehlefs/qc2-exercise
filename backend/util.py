@@ -1,4 +1,4 @@
-from base64 import urlsafe_b64encode
+from base64 import b64encode
 
 
 def text_to_data_url(text: str, content_type: str) -> str:
@@ -11,4 +11,4 @@ def text_to_data_url(text: str, content_type: str) -> str:
     Returns:
         str: the encoded URL
     """
-    return f"data:{content_type};base64,{urlsafe_b64encode(text.encode()).decode()}"
+    return f"data:{content_type};base64,{b64encode(text.encode()).decode()}"
